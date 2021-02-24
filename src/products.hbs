@@ -1,0 +1,29 @@
+{{#> layouts/basic}}
+  {{#*inline "main-block" }}
+      <h1 class="text-center text-4xl p-5">PRODUCTOS</h1>
+      <!--Contenedor de detalles -->
+      <section class="flex space-x-4">
+          <section class="flex-none">
+            {{#> detail_layout/image}}{{/detail_layout/image}}
+          </section>
+          <section class="flex-initial">
+            {{#> detail_layout/content}}{{/detail_layout/content}}
+          </section>
+          <section class="flex-initial">
+            {{#> detail_layout/buttons}}{{/detail_layout/buttons}}
+          </section>
+      </section>
+
+      <!-- Contenedor de tarjetas -->
+      <section class="border border-black p-5 mt-4 mb-5"> 
+        <h2 class="text-center">Productos Relacionados</h2>
+          <section class="flex flex-wrap justify-between container"> 
+            {{#each productos}}
+            {{#> cards/cards card_title=title card_uri=uri}}
+            {{/cards/cards}}
+            {{/each}}
+          </section>
+      </section> 
+    
+      {{/inline}}
+{{/layouts/basic}}

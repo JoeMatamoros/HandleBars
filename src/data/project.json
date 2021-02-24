@@ -1,0 +1,19 @@
+{ "site_title":"Mi Página",
+      "productos": [
+        {
+          "title":"Producto 1",
+          "uri":"producto1.html",
+          "img":"https://placehold.it/150x150"
+        },
+        {
+          "title":"Producto 2",
+          "uri":"producto2.html",
+          "img":"https://placehold.it/150x150"
+        },
+        {
+          "title":"Producto 3",
+          "uri":"producto3.html",
+          "img":"https://placehold.it/150x150"
+        }
+      ]
+}
